@@ -1,0 +1,20 @@
+matlab中，.mat数据是所存的矩阵（即数据）；.m文件中是对数据进行处理的代码
+
+1、import data导入需要操作的数据
+2、右键save as ---> .mat文件
+3、如需对数据进行操作，可在同一文件下，建立“.m”文件
+
+
+
+e.g.,
+1、导入加速度传感器的数据，在workspace中显示导入的矩阵（数列），显示name为Accelerometer，与导入.txt文件名一致
+2、右键save as ---> .mat文件，如，save as “matlab.mat”文件；
+3、如需对数据进行操作，可在同一文件下，建立“.m”文件，写入对数据进行操作的代码；如“Accelerometer.m”，例如将三轴加速度转化为一轴数据
+  load('matlab.mat');
+  x1 = Accelerometer(:,1);
+  y1 = Accelerometer(:,2);
+  z1 = Accelerometer(:,3);
+  M1 = sqrt(x1.*x1+y1.*y1+z1.*z1);
+  plot(M1);
+  set(gcf,'Name','Accelerometer');
+  clear;
