@@ -17,4 +17,5 @@ e.g.,
   M1 = sqrt(x1.*x1+y1.*y1+z1.*z1);
   plot(M1);
   set(gcf,'Name','Accelerometer');
+  saveas(gcf,'acc双手-1轴.fig');
   clear;
