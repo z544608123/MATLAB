@@ -19,3 +19,7 @@ e.g.,
   set(gcf,'Name','Accelerometer');
   saveas(gcf,'acc双手-1轴.fig');
   clear;
+4、画出的三轴，一般的标识
+   x---blue，
+   y---orange
+   z---yellow
