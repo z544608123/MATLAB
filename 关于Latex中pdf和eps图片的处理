@@ -1,0 +1,1 @@
+如果TEXstudio正常安装的话， 打开cmd，直接cd到eps文件所在目录(假设名为a.eps)，执行命令：epstopdf a.eps  就会在当前目录生成a.pdf
